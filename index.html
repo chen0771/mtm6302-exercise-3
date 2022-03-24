@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listing</title>
+    <!--CSS stylesheet-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="login">
+
+        <h1>Job Listing</h1>
+
+        <form method="post">
+            <label for="FullName">Full Name</label>
+            <input type="text" name="u"  required="required" />
+            
+            <label for="Status">Current Employment Status</label>
+            <select name="selectbox" class="selectbox">
+                <option value="FullTime">Full Time</option>
+                <option value="PartTime">Part Time</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+
+            <label for="textarea">What are your qualifications</label>
+            <textarea name="textarea" class="textarea-field"></textarea>
+
+            <div class="checkbox">
+                <input type="checkbox" >
+                <label>Accept the Terms and Conditions</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Save</button>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
