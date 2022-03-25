@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,46 @@
     <!--CSS stylesheet-->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
     <div class="login">
 
         <h1>Job Listing</h1>
 
-        <form method="post">
-            <label for="FullName">Full Name</label>
-            <input type="text" name="u"  required="required" />
-            
-            <label for="Status">Current Employment Status</label>
-            <select name="selectbox" class="selectbox">
-                <option value="FullTime">Full Time</option>
-                <option value="PartTime">Part Time</option>
-                <option value="Unemployed">Unemployed</option>
-            </select>
+        <form id="form">
+            <!-- <div id="today"></div> -->
+            <div id="saved" style="color: rgba(250, 183, 209, 0.664);"></div>
 
-            <label for="textarea">What are your qualifications</label>
-            <textarea name="textarea" class="textarea-field"></textarea>
+            <div class="form-group">
+                <label for="fullName">Full Name</label>
+                <input type="text" id="fullName" name="u" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label for="status">Current Employment Status</label>
+                <select name="selectbox" id="status" class="selectbox">
+                    <option value="FullTime">Full Time</option>
+                    <option value="PartTime">Part Time</option>
+                    <option value="Unemployed">Unemployed</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="textarea">What are your qualifications</label>
+                <textarea name="textarea" id="textarea" class="textarea-field"></textarea>
+            </div>
 
             <div class="checkbox">
-                <input type="checkbox" >
+                <input type="checkbox">
                 <label>Accept the Terms and Conditions</label>
             </div>
 
-            <button type="submit" class="btn btn-primary btn-block btn-large">Save</button>
-            <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
+            <button class="saveBtn btn btn-primary btn-default btn-large">Save</button>
+            <button id="submit" bindreset='formReset'class="submit btn btn-primary btn-large">Submit</button>
         </form>
     </div>
-    
+    <script src="script.js"></script>
 </body>
+
 </html>
